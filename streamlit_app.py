@@ -25,7 +25,7 @@ streamlit.dataframe(fruits_to_show)
 
 # New section display
 streamlit.header("Fruityvice Fruit Advice!")
-fruityvise_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvise_response = requests.get("https://fruityvice.com/api/fruit/" + "Kiwi")
 # streamlit.text(fruityvise_response.json())
 
 # flatten the simple to moderately semi-structured nested JSON structures to flat tables
