@@ -28,7 +28,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 fruityvise_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvise_response.json())
 
-# flatten the simple to moderately semi-structured nested JSON structures to flat tables --- it creates table
+# flatten the simple to moderately semi-structured nested JSON structures to flat tables
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
 # Displays table on page
